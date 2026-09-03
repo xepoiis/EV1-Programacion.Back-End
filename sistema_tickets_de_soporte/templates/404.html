@@ -2,11 +2,69 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Error 404 - No Encontrado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404 - Sistema Central de Soporte</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { display: flex; height: 100vh; background-color: #f0f2f5; color: #333; }
+
+        .sidebar { width: 260px; background-color: #1e293b; color: white; display: flex; flex-direction: column; padding: 20px; }
+        .sidebar h2 { font-size: 1.2rem; margin-bottom: 5px; }
+        .user-profile { font-size: 0.85rem; color: #94a3b8; margin-bottom: 30px; padding-bottom: 15px; border-bottom: 1px solid #334155; }
+        .menu-item { padding: 12px 15px; margin-bottom: 8px; background-color: #334155; border-radius: 6px; cursor: pointer; transition: 0.2s; font-size: 0.95rem; }
+        .menu-item:hover { background-color: #3b82f6; }
+        
+        .main-content { flex: 1; display: flex; flex-direction: column; padding: 20px; justify-content: center; align-items: center; }
+
+        .error-card { 
+            background: white; 
+            padding: 50px 40px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+            border-top: 5px solid #ef4444;
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+        .error-card h1 { font-size: 6rem; color: #0f172a; line-height: 1; margin-bottom: 10px; }
+        .error-card h2 { font-size: 1.5rem; color: #475569; margin-bottom: 20px; }
+        .error-card p { color: #64748b; margin-bottom: 30px; line-height: 1.6; }
+        
+        .btn-return { 
+            display: inline-block; 
+            padding: 12px 24px; 
+            background-color: #2563eb; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            font-weight: 500; 
+            transition: 0.2s; 
+        }
+        .btn-return:hover { background-color: #1d4ed8; }
+    </style>
 </head>
 <body>
-    <h1>Error 404</h1>
-    <p>Lo sentimos, la página que estás buscando no existe en este servidor.</p>
-    <a href="/">Volver al inicio</a>
+
+    <aside class="sidebar">
+        <h2>Soporte IT</h2>
+        <div class="user-profile">Técnico Nivel 2 (Conectado)</div>
+        <a href="/" style="text-decoration: none; color: inherit;">
+            <div class="menu-item">Gestión de Tickets</div>
+        </a>
+        <div class="menu-item">Panel de Reportes</div>
+        <div class="menu-item">Base de Conocimiento</div>
+        <div class="menu-item">Reglas de Negocio</div>
+        <div style="margin-top: auto;" class="menu-item">Cerrar Sesión</div>
+    </aside>
+
+    <main class="main-content">
+        <div class="error-card">
+            <h1>404</h1>
+            <h2>Página no encontrada</h2>
+            <p>Lo sentimos, la ruta a la que intentas acceder no existe en el sistema o no tienes los privilegios necesarios para visualizarla.</p>
+            <a href="/" class="btn-return">Volver al Dashboard</a>
+        </div>
+    </main>
+
 </body>
 </html>
