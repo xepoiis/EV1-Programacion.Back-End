@@ -25,6 +25,7 @@ EV1-Programacion.Back-End/
 ├── .gitignore                      # Archivos y carpetas ignorados por git (ej: entorno virtual)
 ├── manage.py                       # Gestor del proyecto Django
 └── README.md                       # Documentación del proyecto
+└── requirements.txt                # Requerimientos de funcionamiento del proyecto
 ```
 
 *Desarrollado por Jose Galdamez para la Evaluación 1 de Programación Back-End.*
