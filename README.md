@@ -28,14 +28,14 @@ Es estrictamente necesario crear un ambiente virtual para aislar las dependencia
 
 **En Windows:**
 ```bash
-python -m venv .venv
-.venv\Scripts\activate
+python -m venv nombre_ambiente
+nombre_ambiente\Scripts\activate
 ```
 
 **En macOS o Linux:**
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
+python3 -m venv nombre_ambiente
+source nombre_ambiente/bin/activate
 ```
 *(Debe asegurarse de que el nombre del ambiente virtual aparezca en su terminal, indicando que está activo).*
 
