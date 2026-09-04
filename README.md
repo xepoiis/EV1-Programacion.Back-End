@@ -57,4 +57,4 @@ Una vez que el servidor esté en ejecución, abra su navegador web e ingrese a `
 Para verificar el funcionamiento de la página de error personalizada, ingrese deliberadamente a una ruta inexistente, por ejemplo: `http://127.0.0.1:8000/ruta-inexistente`.
 
 ---
-*Desarrollado por Jose Galdamez para la Evaluación 1 de Programación Back-End.*
+*Desarrollado por Jose Galdamez*
